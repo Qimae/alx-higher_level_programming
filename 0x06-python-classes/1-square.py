@@ -13,10 +13,10 @@ class Square:
         size : size of a side of a square
     """
     def __init__(self, size):
-    """
-    Initalize square
+        """
+        Initalize square
 
-    Attributes:
-        size : size of a side of a square
-    """
+        Attributes:
+            size : size of a side of a square
+        """
         self.__size = size

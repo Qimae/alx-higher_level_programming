@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module 3-square
-Defines class Square with private instance attribute size and public instance method area
+Defines class Square with private attribute size and public attribute area
 """
 
 
@@ -29,6 +29,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
     def area(self):
         """
         Calculates the current square area

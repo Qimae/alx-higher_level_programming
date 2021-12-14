@@ -1,0 +1,36 @@
+#run test with python3 -m doctest -v ./tests/0-add_integer.txt
+
+Import method to test
+>>> add_integer = __import__('0-add_integer').add_integer
+
+SUCCESS CASES:
+
+Test signed and usigned int and float:
+    >>> print(add_integer(1, 2))
+    3
+    >>> print(add_integer(100, -2))
+    98
+    >>> print(add_integer(100.3, -2))
+    98.3
+
+Test for default value b=98:
+    >>> print(add_integer(2))
+    100
+
+FAIL CASES:
+
+Test for no args:
+    >>> print(add_integer(None))
+    Traceback (most recent call last)
+    ...
+    TypeError: a must be an integer
+
+Test other datatypes:
+    >>> print(add_integer(2, "Holberton"))
+    Traceback (most recent call last)
+    ...
+    TypeError: b must be an integer
+    >>> print(add_integer("Holberton", 2))
+    Traceback (most recent call last)
+    ...
+    TypeError: a must be an integer

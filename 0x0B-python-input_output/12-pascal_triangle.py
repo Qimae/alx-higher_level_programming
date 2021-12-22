@@ -12,7 +12,7 @@ def pascal_triangle(n):
     """returns a list of integers in pascals triangle"""
     if n <= 0:
         return []
-    if n  == 1:
+    if n == 1:
         return [[1]]
 
     triangle = [[1]]

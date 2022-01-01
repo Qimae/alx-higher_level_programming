@@ -28,6 +28,7 @@ class Rectangle(Base):
         y(self, value)
         area(self)
         dispaly(self)
+        __str__(self)
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializes width, height, x and y attributes"""
@@ -101,3 +102,9 @@ class Rectangle(Base):
         """prints the rectangle with character #"""
         print("\n" * self.__y + "\n".join(" " * self.__x + "#" *
               self.__width for i in range(self.__height)))
+
+    def __str__(self):
+        """returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
+        return ("[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
+            self.__class__.__name__, self.id, self.__x,
+            self.__y, self.__width, self.__height))

@@ -7,7 +7,7 @@ with class constructor
 """
 
 
-class Base:
+class Base():
     """
     Attributes:
         __nb_objects
